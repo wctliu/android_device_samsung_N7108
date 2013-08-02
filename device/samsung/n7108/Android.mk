@@ -14,5 +14,10 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_n7108.mk
+LOCAL_PATH := $(call my-dir)
+
+ifeq ($(TARGET_DEVICE),n7108)
+
+include $(call all-makefiles-under,$(LOCAL_PATH))
+
+endif
