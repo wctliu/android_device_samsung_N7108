@@ -12,7 +12,7 @@ TARGET_SCREEN_WIDTH := 720
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/n7108/device_n7108.mk)
+$(call inherit-product, device/samsung/n7108/full_n7108.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := n7108
